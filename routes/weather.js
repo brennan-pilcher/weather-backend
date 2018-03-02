@@ -27,9 +27,12 @@ router.get('/zip/:zip', function(req, res, next) {
     res.json(body);
   });
 
+});
 
 
-
+/* GET wakeup ping */
+router.get('/wake', function(req, res, next) {
+  res.send("Server woken up");
 });
 
 
